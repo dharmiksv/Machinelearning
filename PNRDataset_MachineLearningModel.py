@@ -70,7 +70,7 @@ y_pred = regressor.predict(X_test)
 print("Test set predictions:\n {}".format(y_pred))
 np.set_printoptions(precision=2)
 
-#Test set score
+#Test set score: 0.24
 print("Test set score: {:.2f}".format(regressor.score(X_test,y_test)))
 
 #print(np.concatenate((y_pred.reshape(len(y_pred),1),y_test.reshape(len(y_test),1)),1))
