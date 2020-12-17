@@ -45,7 +45,7 @@ tab_info
 
 
 
-X=dataset.loc[:, ['CreationDate','DepartureTime']].values
+X=dataset.loc[:, ['CreationDate','DepartureTime']].values   #processing only 2 features /10 features
 y=dataset.iloc[:,-1].values
 
 
@@ -106,6 +106,8 @@ plt.ylabel('Departure Time')
 
 plt.xlim(xx.min(), xx.max())
 plt.ylim(yy.min(), yy.max())
-plt.xticks(())
-plt.yticks(())
+plt.xticks((range(-3,3)))
+plt.yticks((range(-3,3)))
 plt.show()
+
+
