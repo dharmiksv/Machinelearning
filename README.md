@@ -13,8 +13,12 @@ Sigmoid Function or Logistic Function:
 hθ(x)=g(θ^T*x)   -- hθ(x) will give us probability that the trip is a Business Travel i.e '1' and it is '0' is just the complement of our probability that it is 1. 
                     hθ(x) =P(y=1|x;θ)=1−P(y=0|x;θ) (Bernoulli distribution)
                     P(y=0|x;θ)+P(y=1|x;θ)=1
-z=θ^T*x
-g(z)=1/(1+e^(−z))
+
+
+    z=θ^T*x   -- Log-odds of the trip is a business or Liesure
+    e^z or e^θ^T*x -- Odds of the trip is a business or Liesure
+    
+g(z)=1/(1+e^(−z)) -- probability of the trip is a or Liesure
 
 The function g(z), shown here, maps any real number to the (0, 1) interval.
 
