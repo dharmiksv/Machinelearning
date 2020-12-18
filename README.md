@@ -12,8 +12,8 @@ Hypothesis Representation:
 Sigmoid Function or Logistic Function:
 
 hθ(x)=g(θ^T*x)   -- hθ(x) will give us probability that the trip is a Business Travel i.e '1' and it is '0' is just the complement of our probability that it is 1. 
-                    hθ(x) =P(y=1|x;θ)=1−P(y=0|x;θ) (Bernoulli distribution)
-                    P(y=0|x;θ)+P(y=1|x;θ)=1
+          hθ(x) =P(y=1|x;θ)=1−P(y=0|x;θ) (Bernoulli distribution)
+          P(y=0|x;θ)+P(y=1|x;θ)=1
 
 
     z=θ^T*x        -- Log-odds of the trip is a business or Liesure
@@ -34,12 +34,13 @@ g(z)=1/(1+e^(−z))
      z>0 → z= ∞ → g(z) = 1 
  
 when z < 0,
-z>0 → z= -∞ → g(z) = 1
+      
+     z>0 → z= -∞ → g(z) = 1
 
 hence,
 
-hθ(x) ≥ 0.5  →   y=1
-hθ(x) < 0.5  →   y=0
+     hθ(x) ≥ 0.5  →   y=1
+     hθ(x) < 0.5  →   y=0
 
 
  
