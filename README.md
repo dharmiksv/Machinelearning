@@ -1,6 +1,6 @@
 # Machinelearning
 
-Logistic Regression is a statstical method for predicting binary classes.
+Logistic Regression is a statstical method for predicting binary classes or classifying data into discrete outcomes.
 
 binary classification problem: y can take on only two values, 0 and 1. 
 Hence, y∈{0,1}. 0 is also called the negative class, and 1 the positive class
@@ -18,7 +18,6 @@ g(z)=1/(1+e^(−z))
 
 The function g(z), shown here, maps any real number to the (0, 1) interval.
 
-Python code to implement g(z) function:
 
 
 
