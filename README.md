@@ -4,6 +4,7 @@ Logistic Regression is a statstical method for predicting binary classes or clas
 
 binary classification problem: y can take on only two values, 0 and 1. 
 Hence, y∈{0,1}. 0 is also called the negative class, and 1 the positive class
+
 Assume x^{(i)} is the features of the PNR data set, and y^{(i)} may be '1' if trip is a Business Travel and '0' if trip is a Leisure.
 
 Hypothesis Representation:
@@ -15,12 +16,42 @@ hθ(x)=g(θ^T*x)   -- hθ(x) will give us probability that the trip is a Busines
                     P(y=0|x;θ)+P(y=1|x;θ)=1
 
 
-    z=θ^T*x   -- Log-odds of the trip is a business or Liesure
+    z=θ^T*x        -- Log-odds of the trip is a business or Liesure
+    
     e^z or e^θ^T*x -- Odds of the trip is a business or Liesure
     
 g(z)=1/(1+e^(−z)) -- probability of the trip is a or Liesure
 
 The function g(z), shown here, maps any real number to the (0, 1) interval.
+
+Decision Boundary:
+
+when z ≥ 0, 
+
+g(z)=1/(1+e^(−z))
+
+     z=0 → g(z) = 0.5
+     z>0 → z= ∞ → g(z) = 1 
+ 
+when z < 0,
+z>0 → z= -∞ → g(z) = 1
+
+hence,
+
+hθ(x) ≥ 0.5  →   y=1
+hθ(x) < 0.5  →   y=0
+
+
+ 
+     
+
+
+
+
+
+
+
+
 
 
 
