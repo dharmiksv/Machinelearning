@@ -51,7 +51,9 @@ Logistic Regression cost function :
                       - log(1-hθ(x))  if y=0
   
 
-
+      Cost(hθ(x),y) = 0 if hθ(x) = y
+      Cost(hθ(x),y) → ∞ if y=0 and hθ(x) → 1
+      Cost(hθ(x),y) → ∞ if y=1 and hθ(x) → 0
 
 
 
