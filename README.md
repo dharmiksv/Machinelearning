@@ -2,7 +2,7 @@
 
 Logistic Regression is a statstical method for predicting binary classes or classifying data into discrete outcomes.
 
-binary classification problem: y can take on only two values, 0 and 1. 
+binary classification problem: y is 0 and 1 always 
 Hence, y∈{0,1}. 0 is also called the negative class, and 1 the positive class
 
 Assume x^{(i)} is the features of the PNR data set, and y^{(i)} may be '1' if trip is a Business Travel and '0' if trip is a Leisure.
@@ -47,15 +47,26 @@ hence,
      
 Logistic Regression cost function :
 
-      Cost(hθ(x),y) = - log(hθ(x))    if y=1
-                      - log(1-hθ(x))  if y=0
+      Cost(hθ(x),y) =  -y log(hθ(x)) - (1-y) log(1- hθ(x))
+      
+ if y=1
+         Cost(hθ(x),y) = - log(hθ(x))
+ if y=0
+         Cost(hθ(x),y) = - log(1-hθ(x))  
   
 
       Cost(hθ(x),y) = 0 if hθ(x) = y
       Cost(hθ(x),y) → ∞ if y=0 and hθ(x) → 1
       Cost(hθ(x),y) → ∞ if y=1 and hθ(x) → 0
+      
+       Note: In binary classification problem, y is 0 and 1 always.
 
 
+              m
+J(θ) = -(1/m) ∑  [y^(i) log(hθ(x^(i))) - (1-y^(i)) log(1- hθ(x^(i)))]
+              i=1
+              
+ 
 
 
 
