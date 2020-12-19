@@ -62,10 +62,14 @@ Logistic Regression cost function :
        Note: In binary classification problem, y is 0 and 1 always.
 
 
-              m
-J(θ) = -(1/m) ∑  [y^(i) log(hθ(x^(i))) - (1-y^(i)) log(1- hθ(x^(i)))]
-              i=1
+                    m
+      J(θ) = -(1/m) ∑  [y^(i) log(hθ(x^(i))) - (1-y^(i)) log(1- hθ(x^(i)))]
+                   i=1
               
+   Gradient Descent:
+   
+               θ := θ - (α/m) X^T(g(Xθ)-y) 
+         
  
 
 
